@@ -1,0 +1,68 @@
+<HTML lang = "pt-br">
+	<head>
+	<meta charset = "utf-8">
+		<title>SQL helper text editor</title>
+	</head>
+	<body bgcolor="#5C3317">
+		<font color ="#FFFFFF" face="comic sans ms">
+			<div align = "center">
+				<p style="font-family: comic sans ms; font-size: x-large; font-weight:small-caps; ">SQL helper text tool</p>
+				<br>
+				<br>
+				Ferramenta de suporte para quem usa SQL, Excel, etc...
+				<br>
+				<p class="texteditor" style="font-family: comic sans ms; font-variant: normal;">
+				<textarea name = "textopraeditar" id = "textopraeditar" rows = "20" cols = "80"></textarea>
+				<br>
+				<br>
+				<!--<input type="checkbox" name="apagarespacos" id="apagarespacos">Apagar espaços no final de cada linha se houver (em progresso)
+				<br>-->
+				<input type="checkbox" name="inseriraspas" id="inseriraspas">Inserir aspas símples em cada linha
+				<br>
+				<input type="checkbox" name="parenteses" id="parenteses">Inserir texto em parênteses
+				<br>
+				<input type="checkbox" name="duplicadas" id="duplicadas">Remover valores duplicados
+				<br>
+				<input type="checkbox" name="vaziopornull" id="vaziopornull">Trocar '' por null
+				<br>
+				<input type="checkbox" name="removerEspacos" id="removerEspacos">Remover espaços do começo e fim
+				<br>
+				<br>
+				<input name="tipoletra" type="radio" value="1"> Tudo maiúsculo
+  				<input name="tipoletra" type="radio" value="2"> Tudo minúsculo
+				<input name="tipoletra" type="radio" value="3"> Prmeira letra Maiúscula
+				<input name="tipoletra" type="radio" value="4"> Normal
+				<br>
+				<br>
+				<input name="numerosouletras" type="radio" value="1"> Remover numeros
+				<input name="numerosouletras" type="radio" value="2"> Remover letras
+			  	<input name="numerosouletras" type="radio" value="3"> Normal
+			  	<br>
+			  	<br>
+				Inserir no começo (deixe em branco se não quiser)
+				<br>
+				<input type="text" id="textocomeco" name="textocomeco" size="100">
+				<br>
+				<input type="button" onclick="scriptselect()" value="Script select" id="butselect">
+				<input type="button" onclick="scriptupdate()" value="Script update" id="butupdate">
+				<input type="button" onclick="scriptdelete()" value="Script delete" id="butdelete">
+				<br>
+			  	<br>
+				Inserir no fim (deixe em branco se não quiser)
+				<br>
+				<input type="text" id="textofim" name="textofim" size="100">
+				<br>
+				<input type="button" onclick="scriptorderby()" value="Script order by" id="butorderby">
+				<br>
+			  	<br>
+				<br>
+				<input type="button" onclick="editartexto()" value="Editar texto" id="buteditartexto">
+				<input type="button" onclick="limpartexto()" value="Limpar texto" id="butlimpartexto">
+				<input type="button" onclick="virgulasementer()" value="Transformar vírgulas em enter" id="butvirgulasementer">
+				<input type="button" onclick="removerCaracteresEspeciais()" value="Remover caracteres especiais" id="butremoverCaracteresEspeciais">
+			</p>
+			</font>
+		</div>
+		<script src="SQL helper.js"></script>
+	</body>
+</html>
